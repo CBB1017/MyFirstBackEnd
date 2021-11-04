@@ -7,14 +7,10 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.example.demo.service.TodoService;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-@Slf4j
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

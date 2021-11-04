@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.ResponseDTO;
 import com.example.demo.dto.TestRequestBodyDTO;
-import com.example.demo.service.TodoService;
-
-import lombok.extern.slf4j.Slf4j;
-@Slf4j
 @RestController
 @RequestMapping("test")//리소스 경로 세팅
 public class TestController {
@@ -44,5 +40,4 @@ public class TestController {
 		ResponseDTO<String> response = ResponseDTO.<String>builder().data(list).build();
 		return ResponseEntity.badRequest().body(response);
 	}
-	 
 }
